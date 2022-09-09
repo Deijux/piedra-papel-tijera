@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Piedra, papel o tijera</title>
+</head>
+<body>
+    <section>
+        <div class="main">
+            <h1>Piedra, papel o tijera</h1>
+            <div class="content">
+                <p>Elige tu proximo movimiento</p>
+                <div class="options">
+                    <button type="button" id="piedra" value="1" onclick="piedra()">Piedra ✊</button>
+                    <button type="button" id="papel" value="2" onclick="papel()">Papel ✋</button>
+                    <button type="button" id="tijera" value="3" onclick="tijera()">Tijera ✌</button>
+                </div>
+                <div class="stats">
+                    <p id="txtvictorias">Victorias: 0</p>
+                    <p id="txtderrotas">Derrotas: 0</p>
+                    <p id="txtempates">Empates: 0</p>
+                </div>
+                <button type="button" onclick="restart()">Reiniciar</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
