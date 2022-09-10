@@ -71,6 +71,10 @@ button:hover {
     border: 2px solid rgba(255, 255, 255, 0.645);
 }
 
+#reload {
+    width: 70px;
+}
+
 @media (max-width: 374px) {
     body {
         background: rgb(131,5,184);
