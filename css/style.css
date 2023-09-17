@@ -7,8 +7,8 @@
 }
 
 body {
-    background: rgb(159,22,218);
-    background: linear-gradient(90deg, rgba(159,22,218,1) 0%, rgba(38,183,238,1) 50%, rgba(0,255,201,1) 92%);
+    background: rgb(131,5,184);
+    background: linear-gradient(180deg, rgba(131,5,184,1) 0%, rgba(38,183,238,1) 100%);
     color: #f1f1f1;
     font-family: 'Nunito', sans-serif;
     color: black;
@@ -23,12 +23,12 @@ section {
 
 .main {
     height: 350px;
-    width: 400px;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.441);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.4px);
@@ -53,8 +53,8 @@ section {
 
 .stats {
     display: flex;
-    width: 270px;
-    justify-content: space-between;
+    gap: 10px;
+    width: auto;
     margin: 20px 0px 20px;
 }
 
@@ -72,53 +72,32 @@ button:hover {
 }
 
 #reload {
-    width: 70px;
-}
-
-@media (max-width: 374px) {
-    body {
-        background: rgb(131,5,184);
-        background: linear-gradient(180deg, rgba(131,5,184,1) 0%, rgba(38,183,238,1) 100%);
-    }
-
-    section {
-        height: 100vh;
-    }
-
-    .main {
-        width: 300px;
-        background: rgba(255, 255, 255, 0.441);
-    }
+    padding: 3px 10px;
 }
 
 @media (min-width: 374px) {
-    body {
-        background: rgb(131,5,184);
-        background: linear-gradient(180deg, rgba(131,5,184,1) 0%, rgba(38,183,238,1) 100%);
-    }
-    
-    section {
-        height: 100vh;
-    }
-
     .main {
         width: 370px;
-        background: rgba(255, 255, 255, 0.441);
     }
 }
 
-@media (min-width: 1200px), (min-width: 992px), (min-width: 768px) {
+@media (min-width: 768px) {
     body {
         background: rgb(159,22,218);
         background: linear-gradient(90deg, rgba(159,22,218,1) 0%, rgba(38,183,238,1) 50%, rgba(0,255,201,1) 92%);
     }
-
-    section {
-        height: 100vh;
-    }
     
     .main {
-        width: 400px;
+        width: 500px;
         background: rgba(255, 255, 255, 0.18);
+    }
+
+    .main > h1 {
+        font-size: 28px;
+    }
+
+    .content p,
+    .content button {
+        font-size: 18px;
     }
 }
