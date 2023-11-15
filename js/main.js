@@ -14,11 +14,11 @@ function aleatorio(min, max) {
 //1 es piedra, 2 es papel, 3 es tijera
 function eleccion(jugada) {
     let resultado = ""
-    if(jugada == 1) {
+    if (jugada == 1) {
         resultado = "piedra ✊"
-    } else if(jugada == 2) {
+    } else if (jugada == 2) {
         resultado = "papel ✋"
-    } else if(jugada == 3) {
+    } else if (jugada == 3) {
         resultado = "tijera ✌"
     } else {
         resultado = "Ingrese un valor válido"
@@ -37,7 +37,7 @@ function restart() {
 }
 
 function piedra() {
-    pc = aleatorio(1,3)
+    pc = aleatorio(1, 3)
     jugador = parseInt(document.getElementById('piedra').value);
 
     if (pc == jugador) {
@@ -49,7 +49,7 @@ function piedra() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok'
         })
@@ -64,7 +64,7 @@ function piedra() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok',
         })
@@ -80,7 +80,7 @@ function piedra() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok',
         })
@@ -90,7 +90,7 @@ function piedra() {
 }
 
 function papel() {
-    pc = aleatorio(1,3)
+    pc = aleatorio(1, 3)
     jugador = parseInt(document.getElementById('papel').value);
 
     if (pc == jugador) {
@@ -102,7 +102,7 @@ function papel() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok'
         })
@@ -117,7 +117,7 @@ function papel() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok'
         })
@@ -132,17 +132,17 @@ function papel() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok'
         })
         perdidas = perdidas + 1,
-        txtderrotas.textContent = 'Derrotas: ' + perdidas + '';
+            txtderrotas.textContent = 'Derrotas: ' + perdidas + '';
     }
 }
 
 function tijera() {
-    pc = aleatorio(1,3)
+    pc = aleatorio(1, 3)
     jugador = parseInt(document.getElementById('tijera').value);
 
     if (pc == jugador) {
@@ -154,7 +154,7 @@ function tijera() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok'
         })
@@ -169,7 +169,7 @@ function tijera() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok'
         })
@@ -184,7 +184,7 @@ function tijera() {
             allowOutsideClick: false,
             allowEnterKey: true,
             customClass: {
-                popup:'popup-class',
+                popup: 'popup-class',
             },
             confirmButtonText: 'Ok'
         })
